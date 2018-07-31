@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- CHARACTOR -->
+		<meta charset="utf-8">
+		<!-- VIEWPORT -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- TITLE -->
+		<title>Aquarium Park</title>
+		<!-- Google Font Cabin& Rubik-->
+		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+		<!-- FONTAWESOME -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<!-- BOOTSTRAP CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<!-- ORIGINAL CSS -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+	 <!-- Header -->
+		<header class="container-fluid text-center">
+			<h1 class="hd-h1">Aquarium Park</h1>
+		</header>
+
+		<!-- Form	 -->
+		<section>
+
+		<div id="formDiv" class="container main">
+			<form class="form-group sec-form container">
+				<label>Thanks for visiting us!!</label>
+				<input type="text" id="myInput" class="form-control" placeholder="Subject">
+				<textarea name="name" rows="8" cols="60" id="myText" class="form-group" placeholder="Tell us about your experience!"></textarea>
+			</form>
+
+			<!-- button element here (JS) -->
+
+			<!-- add img / in process
+			<div class="input-group">
+				 img select, if img JS ready
+				<select id="mySelect" class="custom-select"></select>
+			</div>-->
+		</div>
+		</section>
+
+		<!-- Clicked Result(H2 and text) shows up here -->
+		<div id="result" class="container px-3">
+		</div>
+
+		<!-- Remove and Hide button / create by JS -->
+		<div id="divBtn" class="text-center">
+		</div>
+
+		<!-- Footer -->
+		<footer class="container text-center">
+			<p>Copyright &#169; 2018 Aqualium Park</p>
+		</footer>
+
+
+		<!-- Core JavaScript Part III video 6/7 -->
+		<div class="container-fluid">
+			<div class="row">
+			</div>
+		</div>
+
+
+		<!-- No.1 -->
+		<button type="button">Click me</button>
+
+
+
+		<!-- No.2 -->
+		<button type="button" id="hide">Hide Image</button>
+		<button type="button" id="show">Show Image</button>
+		<button type="button" id="toggleImg">Toggle Image</button>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3wak5_RXODG43vXuWd46wp65_4fHhfInxkk5R35qTXM6-Wgch" alt="">
+
+		<!-- No.3 -->
+		<h1>Hello World</h1>
+
+		<!-- Advanced JavaScript video 2/9 -->
+		<input id="userInput">
+		<button type="button" onclick="checkInput()">Check</button>
+
+		<!-- Advanced JavaScript video 3/9 -->
+		<textarea></textarea>
+		<div>
+			<button onclick="publish()">click</button>
+		</div>
+
+		<!-- Advanced JavaScript Part I video 6/9 -->
+<h1>which restaurans do you want to go?</h1>
+<button type="button" onclick="chooseRestaurant()">Choose</button>
+
+<div id="restaurantDiv">
+</div>
+<!-- JQUERY -->
+		<!-- Bootstrap jquery / This gives access to the jquery library -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<!-- Bootstrap Popper / Popper is required for bootstrap 4 JS functionality -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<!-- Bootstrap JS plugin / This makes bootstrap 4 JS work -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<!-- Original custom JS -->
+  	<script type="text/javascript" src="js/main.js"></script>
+
+
+	</body>
+</html>
