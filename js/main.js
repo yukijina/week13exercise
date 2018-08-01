@@ -38,13 +38,39 @@ var joinedName = splitName.join('')
 //console.log(joinedName.split('a').join('x'))
 
 
-//No.10 - regular expression & listen - haven't done
-var myDiv = document.getElementById('myDiv')
+//No.10 - regular expression
+// var myDiv = document.getElementById('myDiv')
+//
+// $('button').click(function(){
+//    var inputValue = document.getElementById('inputValue').value
+//    var t = document.createElement('p')
+//    t.textContent = inputValue;
+//    myDiv.appendChild(t)
+//
+//    //validating if email address has a-z 0-9 ._%- and @ and a-z 0-9 .- and .com
+//    // 1st / means opening, last / means closing,
+//    //{2,5}$ means, email needs minimum 2 to five charactors
+//    var regEx = /^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,5}$/
+//    //test if email valids the above informaiton
+//    console.log(regEx.test(inputValue))
+// })
 
-$('button').click(function(){
+
+// No.11 another way to write function with "addEventListener()"
+
+var t = document.createElement('p') // if you put "var outside of function", textContent disappear when you click 2nd time
+
+document.getElementsByClassName('btn')[0].addEventListener("click", function(){
    var inputValue = document.getElementById('inputValue').value
-   var t = document.createElement('p')
    t.textContent = inputValue;
    myDiv.appendChild(t)
+
+   //validating if email address has a-z 0-9 ._%- and @ and a-z 0-9 .- and .com
+   // 1st / means opening, last / means closing,
+   //{2,5}$ means, email needs minimum 2 to five charactors
+   var regEx = /^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,5}$/
+   //test if email valids the above informaiton
+   console.log(regEx.test(inputValue))
+
 
 })
